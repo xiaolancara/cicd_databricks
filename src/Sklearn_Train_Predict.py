@@ -78,7 +78,7 @@ dbutils.fs.cp (src_path, data_path)
 # COMMAND ----------
 
 import pandas as pd
-data = pd.read_csv(data_path.replace("dbfs:","/dbfs"))
+data = pd.read_csv(data_path.replace("dbfs:","/dbfs"), sep=';')
 
 # COMMAND ----------
 
